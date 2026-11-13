@@ -471,11 +471,13 @@
    if(cards.length === 0) return;
    active = (newIndex + cards.length) % cards.length;
 
+   const isSmallMobile = window.innerWidth <= 380;
    const isMobile = window.innerWidth <= 520;
    const isTablet = window.innerWidth <= 768;
+   const isLaptop = window.innerWidth <= 1024;
 
-   const xOffset = isMobile ? 130 : (isTablet ? 160 : 240);
-   const sideScale = isMobile ? 0.62 : (isTablet ? 0.68 : 0.72);
+   const xOffset = isSmallMobile ? 100 : (isMobile ? 115 : (isTablet ? 145 : (isLaptop ? 190 : 240)));
+   const sideScale = isSmallMobile ? 0.52 : (isMobile ? 0.58 : (isTablet ? 0.66 : (isLaptop ? 0.70 : 0.72)));
 
    cards.forEach((card, i) => {
     let diff = i - active;
