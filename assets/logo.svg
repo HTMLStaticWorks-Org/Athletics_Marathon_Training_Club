@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 285" fill="none" class="stride-runner-logo">
+  <defs>
+    <!-- Dynamic speed gradients -->
+    <linearGradient id="strideLimeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ddff33"/>
+      <stop offset="50%" stop-color="#c9f31d"/>
+      <stop offset="100%" stop-color="#9ddc00"/>
+    </linearGradient>
+    <linearGradient id="strideTrailGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c9f31d" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#c9f31d" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ddff33"/>
+    </linearGradient>
+    <linearGradient id="strideWhiteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <!-- High-definition shadow for universal contrast on light & dark -->
+    <filter id="athleticGlow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <!-- ========================================== -->
+  <!-- 1. HORIZONTAL SPEED STREAKS (BACKGROUND)    -->
+  <!-- ========================================== -->
+  <g class="speed-trails" opacity="0.95">
+    <path d="M125 50 C145 49 175 48 195 49 C175 52 145 53 125 50 Z" fill="url(#strideTrailGrad)"/>
+    <path d="M48 76 C85 75 140 73 175 75 C140 78 85 78 48 76 Z" fill="url(#strideTrailGrad)"/>
+    <path d="M22 97 C65 95 130 94 165 96 C130 99 65 99 22 97 Z" fill="url(#strideTrailGrad)"/>
+    <path d="M68 116 C105 115 155 114 185 116 C155 119 105 119 68 116 Z" fill="url(#strideTrailGrad)"/>
+    <path d="M35 138 C75 137 125 136 150 138 C125 141 75 141 35 138 Z" fill="url(#strideTrailGrad)"/>
+    <path d="M12 215 C45 208 95 200 120 202 C95 206 45 214 12 215 Z" fill="url(#strideTrailGrad)"/>
+    <path d="M32 239 C100 232 220 220 295 222 C220 226 100 238 32 239 Z" fill="url(#strideTrailGrad)"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. OVERHEAD MOTION CRESCENT SWOOSH         -->
+  <!-- ========================================== -->
+  <path class="overhead-swoosh"
+        d="M152 72 
+           C170 38, 225 8, 285 8 
+           C340 8, 380 40, 372 105 
+           C368 135, 355 155, 348 160 
+           C354 148, 362 125, 360 100 
+           C356 50, 325 22, 280 22 
+           C235 22, 185 45, 152 72 Z"
+        fill="url(#strideLimeGrad)"
+        filter="url(#athleticGlow)"/>
+
+  <!-- ========================================== -->
+  <!-- 3. GROUND PLANE TRACK OVALS & SPEED RINGS  -->
+  <!-- ========================================== -->
+  <g class="track-rings" filter="url(#athleticGlow)">
+    <!-- Outer ground track curve (lime) -->
+    <path d="M140 248 
+             C210 238, 330 225, 410 215 
+             C470 207, 498 190, 485 178 
+             C465 168, 415 172, 355 180 
+             C285 190, 205 208, 140 224 
+             C195 210, 275 194, 345 186 
+             C400 179, 445 176, 458 182 
+             C470 190, 445 202, 395 210 
+             C320 220, 210 232, 140 248 Z" 
+          fill="url(#strideLimeGrad)"/>
+
+    <!-- Middle track curve (lime) -->
+    <path d="M185 235 
+             C245 225, 340 212, 415 200 
+             C460 192, 475 180, 460 173 
+             C440 166, 390 172, 335 180 
+             C275 190, 205 205, 155 218 
+             C200 206, 265 193, 325 185 
+             C375 178, 415 174, 430 178 
+             C442 183, 420 192, 380 199 
+             C315 209, 235 222, 185 235 Z" 
+          fill="url(#strideLimeGrad)"/>
+
+    <!-- Inner tight speed loop under feet -->
+    <path d="M225 220 
+             C275 212, 345 202, 395 192 
+             C430 185, 438 177, 422 172 
+             C405 167, 365 172, 320 179 
+             C275 186, 225 198, 195 206 
+             C225 199, 270 188, 315 182 
+             C350 177, 380 174, 392 177 
+             C400 181, 385 187, 355 193 
+             C310 201, 255 211, 225 220 Z" 
+          fill="url(#strideLimeGrad)"/>
+
+    <!-- Foreground white aerodynamic blade swoosh -->
+    <path d="M265 162 
+             C330 156, 425 152, 475 157 
+             C505 161, 510 168, 485 175 
+             C455 182, 395 188, 335 196 
+             C385 188, 440 182, 465 176 
+             C485 171, 478 166, 452 163 
+             C408 159, 325 161, 265 162 Z" 
+          fill="url(#strideWhiteGrad)"/>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 4. RUNNER SPRINTING ATHLETE SILHOUETTE      -->
+  <!-- ========================================== -->
+  <g class="runner-figure" filter="url(#athleticGlow)">
+    
+    <!-- A. TRAIL ARM (LEFT ARM - REACHING BACK) -->
+    <!-- Muscle contour in crisp athletic white with dark stroke outline -->
+    <path d="M198 76 
+             C182 72, 160 67, 142 66 
+             C132 65, 126 69, 128 76 
+             C130 83, 137 87, 146 87 
+             C158 87, 172 82, 185 81 
+             C192 86, 198 90, 204 90 
+             C206 85, 204 79, 198 76 Z" 
+          fill="#ffffff"
+          stroke="#11211c"
+          stroke-width="1.2"
+          stroke-linejoin="round"/>
+
+    <!-- Trail arm fist -->
+    <path d="M128 76 
+             C124 72, 120 74, 121 79 
+             C122 84, 127 87, 133 86 
+             C135 83, 133 78, 128 76 Z" 
+          fill="#eaf4ee"
+          stroke="#11211c"
+          stroke-width="1.2"
+          stroke-linejoin="round"/>
+
+    <!-- B. TRAIL LEG (LEFT LEG - FULL STRIDE EXTENSION) -->
+    <!-- Thigh (Black compression tights) -->
+    <path d="M168 135 
+             C155 145, 138 165, 122 188 
+             C112 202, 102 215, 96 220 
+             C100 223, 107 221, 115 214 
+             C130 200, 148 178, 165 158 
+             C176 145, 182 138, 180 134 Z" 
+          fill="#11211c"/>
+
+    <!-- White lateral speed stripe on tights -->
+    <path d="M165 140 
+             C150 154, 135 174, 120 196 
+             C110 209, 102 218, 98 221 
+             C100 222, 104 220, 110 214 
+             C124 198, 140 178, 156 158 
+             C165 147, 168 142, 165 140 Z" 
+          fill="#ffffff"/>
+
+    <!-- Trail Foot & Running Shoe -->
+    <path d="M96 220 
+             C92 222, 85 228, 82 236 
+             C80 243, 84 246, 92 244 
+             C99 242, 106 235, 108 228 
+             C106 223, 101 221, 96 220 Z" 
+          fill="#11211c"/>
+    <path d="M81 238 C80 244, 85 247, 94 245 C98 244, 102 241, 104 238 C97 241, 88 242, 81 238 Z" fill="#ffffff"/>
+
+    <!-- C. TORSO & ATHLETIC JERSEY -->
+    <!-- Black core running singlet leaning at 45 degrees -->
+    <path d="M214 68 
+             C225 64, 245 74, 255 88 
+             C246 102, 234 116, 218 128 
+             C206 137, 192 142, 180 144 
+             C174 141, 172 135, 175 128 
+             C182 112, 196 95, 208 80 
+             C211 76, 212 71, 214 68 Z" 
+          fill="#11211c"/>
+
+    <!-- Neon lime lightning dynamic energy slash on jersey -->
+    <path d="M195 95 
+             L215 88 
+             L205 108 
+             L228 102 
+             L188 136 
+             L198 116 
+             L182 120 Z" 
+          fill="url(#strideLimeGrad)"/>
+
+    <!-- D. HEAD & NECK -->
+    <!-- White athletic aerodynamic silhouette profile -->
+    <path d="M245 42 
+             C252 38, 265 38, 274 44 
+             C280 48, 282 55, 278 62 
+             C275 67, 268 70, 260 71 
+             C255 72, 250 74, 246 78 
+             C242 74, 240 68, 240 63 
+             C240 54, 241 46, 245 42 Z" 
+          fill="#ffffff"
+          stroke="#11211c"
+          stroke-width="1.2"
+          stroke-linejoin="round"/>
+
+    <!-- Athletic haircut detail (Black hair cap) -->
+    <path d="M246 42 
+             C254 38, 266 38, 272 43 
+             C270 46, 264 47, 258 48 
+             C252 49, 248 53, 246 58 
+             C244 54, 244 47, 246 42 Z" 
+          fill="#11211c"/>
+
+    <!-- E. LEAD ARM (RIGHT ARM - DRIVING FORWARD) -->
+    <!-- Bicep & Forearm punching forward in white muscle contour -->
+    <path d="M244 72 
+             C255 75, 270 82, 282 92 
+             C288 97, 296 98, 302 92 
+             C308 86, 306 78, 298 72 
+             C290 66, 278 63, 266 65 
+             C258 66, 250 68, 244 72 Z" 
+          fill="#ffffff"
+          stroke="#11211c"
+          stroke-width="1.2"
+          stroke-linejoin="round"/>
+
+    <!-- Right Fist punching forward -->
+    <path d="M296 74 
+             C302 70, 310 74, 312 80 
+             C313 86, 308 91, 302 91 
+             C298 90, 294 85, 294 80 
+             C294 76, 295 74, 296 74 Z" 
+          fill="#eaf4ee"
+          stroke="#11211c"
+          stroke-width="1.2"
+          stroke-linejoin="round"/>
+
+    <!-- F. LEAD LEG (RIGHT LEG - HIGH KNEE SPRINT DRIVE) -->
+    <!-- Neon Lime compression layer / thigh drive -->
+    <path d="M198 138 
+             C212 135, 235 132, 255 136 
+             C268 139, 278 147, 275 158 
+             C272 168, 258 180, 242 195 
+             C232 204, 222 210, 218 206 
+             C215 202, 218 192, 226 182 
+             C238 168, 246 156, 238 150 
+             C228 144, 208 144, 198 138 Z" 
+          fill="url(#strideLimeGrad)"/>
+
+    <!-- Lower leg / shin & calf angled back toward ground -->
+    <path d="M240 178 
+             C232 188, 222 198, 212 210 
+             C206 217, 200 224, 196 226 
+             C194 224, 196 218, 202 210 
+             C210 200, 220 188, 228 178 Z" 
+          fill="#11211c"/>
+
+    <!-- Lead Foot & Running Shoe -->
+    <path d="M196 222 
+             C192 225, 185 232, 184 239 
+             C183 245, 188 248, 197 246 
+             C206 244, 214 237, 215 230 
+             C212 225, 205 222, 196 222 Z" 
+          fill="#11211c"/>
+    <path d="M184 240 C183 246, 188 248, 198 246 C204 244, 209 241, 212 238 C204 241, 193 243, 184 240 Z" fill="#ffffff"/>
+  </g>
+</svg>
